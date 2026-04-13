@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("event", () => {
   document.getElementById("header").innerHTML = `
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
     <div class="container">

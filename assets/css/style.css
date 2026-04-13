@@ -1,39 +1,15 @@
-body {
-  background: #f8f9fa;
-}
-
-/* Card */
 .card {
   border-radius: 15px;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-8px) scale(1.02);
-}
-
-/* Image */
-.card img {
-  height: 200px;
-  object-fit: cover;
-}
-
-/* Loader */
-#loader {
-  display: none;
+  transform: translateY(-8px) scale(1.05);
 }
 
 .card img {
   height: 200px;
   object-fit: cover;
-}
-
-.card {
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
 }
 
 .nav-link:hover {

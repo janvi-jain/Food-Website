@@ -24,7 +24,7 @@ function loadCart() {
     `;
   });
 
-  list.innerHTML += `<h4>Total: ₹ ${total}</h4>`;
+  list.innerHTML += `<h4>Total Calories: 🔥 ${total}</h4>`;
 }
 
 window.changeQty = function(i, val) {
