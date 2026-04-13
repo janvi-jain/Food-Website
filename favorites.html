@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Favorites</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<div class="container my-4">
+  <div class="row" id="favContainer"></div>
+</div>
+
+<div class="modal fade" id="recipeModal">
+  <div class="modal-dialog">
+    <div class="modal-content p-3">
+      <h5 id="modalTitle"></h5>
+      <div id="modalBody"></div>
+      <button class="btn btn-danger mt-2" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+
+
+<script type="module" src="assets/js/main.js"></script>
+<script type="module" src="./assets/js/header.js"></script>
+
+<script type="module">
+import { getFav } from "./assets/js/storage.js";
+
+let fav = getFav();
+let favBox = document.getElementById("favContainer");
+
+fav.forEach(item => {
+  favBox.innerHTML += `
+  <div class="col-md-3">
+    <div class="card">
+      <img src="${item.image}">
+      <div class="card-body">
+        <h6>${item.recipe}</h6>
+      </div>
+    </div>
+  </div>
+  `;
+});
+</script>
+
+</body>
+</html>
